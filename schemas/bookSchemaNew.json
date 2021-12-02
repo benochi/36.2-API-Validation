@@ -1,0 +1,79 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "isbn",
+      "author",
+      "language",
+      "pages",
+      "title",
+      "year"
+    ],
+    "properties": {
+      "amazon-url": {
+        "$id": "#/properties/amazon-url",
+        "type": "string",
+        "title": "The Amazon-url Schema",
+        "default": "",
+        "examples": ["https://www.amazon.com/Drysine-Legacy-Spiral-Wars-Shepherd/dp/153660769X"],
+        "pattern": "^(.*)$"
+      },
+      "author": {
+        "$id": "#/properties/author",
+        "type": "string",
+        "title": "The Author Schema",
+        "default": "",
+        "examples": ["Joel Shepherd"],
+        "pattern": "^(.*)$"
+      },
+      "isbn": {
+        "$id": "#/properties/isbn-10",
+        "type": "string",
+        "title": "The Isbn-13 Schema",
+        "default": "",
+        "examples": ["9798723982178"],
+        "pattern": "^(.*)$"
+      },
+      "language": {
+        "$id": "#/properties/language",
+        "type": "string",
+        "title": "The Language Schema",
+        "default": "",
+        "examples": ["english"],
+        "pattern": "^(.*)$"
+      },
+      "pages": {
+        "$id": "#/properties/pages",
+        "type": "number",
+        "title": "The Pages Schema",
+        "default": 0,
+        "examples": [502]
+      },
+      "publisher": {
+        "$id": "#/properties/publisher",
+        "type": "string",
+        "title": "The Publisher Schema",
+        "default": "",
+        "examples": ["Unknown"],
+        "pattern": "^(.*)$"
+      },
+      "title": {
+        "$id": "#/properties/title",
+        "type": "string",
+        "title": "The Title Schema",
+        "default": "",
+        "examples": ["Drysine Legacy"],
+        "pattern": "^(.*)$"
+      },
+      "year": {
+        "$id": "#/properties/year",
+        "type": "number",
+        "title": "The Year Schema",
+        "default": 0,
+        "examples": [2021]
+      }
+    }
+  }
